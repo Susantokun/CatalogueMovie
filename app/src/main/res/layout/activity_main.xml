@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:adnroid="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    adnroid:orientation="vertical"
+    adnroid:layout_height="match_parent"
+    adnroid:layout_width="match_parent"
+    tools:context="com.susantokun.project1_cataloguemovie.MainActivity"
+    adnroid:paddingRight="@dimen/activity_horizontal_margin"
+    adnroid:paddingLeft="@dimen/activity_horizontal_margin"
+    adnroid:paddingTop="@dimen/activity_vertical_margin"
+    adnroid:paddingBottom="@dimen/activity_vertical_margin">
+    <LinearLayout
+        adnroid:layout_width="match_parent"
+        adnroid:gravity="center"
+        adnroid:weightSum="1"
+        adnroid:orientation="horizontal"
+        adnroid:layout_height="wrap_content">
+        <EditText
+            adnroid:layout_width="0dp"
+            adnroid:layout_height="wrap_content"
+            adnroid:layout_weight="0.9"
+            adnroid:hint="@string/edt_cari"
+            adnroid:id="@+id/edt_cari"/>
+        <Button
+            adnroid:layout_width="wrap_content"
+            adnroid:layout_height="wrap_content"
+            adnroid:text="@string/btn_cari"
+            adnroid:layout_weight="0.1"
+            adnroid:id="@+id/btn_cari"/>
+    </LinearLayout>
+    <ListView
+        adnroid:paddingTop="@dimen/activity_vertical_margin"
+        adnroid:paddingLeft="@dimen/activity_horizontal_margin"
+        adnroid:paddingRight="@dimen/activity_horizontal_margin"
+        adnroid:layout_width="match_parent"
+        adnroid:id="@+id/lv_movie"
+        adnroid:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>
